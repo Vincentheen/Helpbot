@@ -1,0 +1,118 @@
+Liste Complète des Commandes du Bot SCP-Reloaded
+==============================================
+
+Ce document liste toutes les commandes disponibles du bot SCP-Reloaded, organisées par catégorie.
+
+Commandes Générales
+------------------
+!hello - Le bot répond avec un message de salutation
+!commands - Affiche la liste des commandes disponibles
+!cmdlist - Alias de !commands
+!serverinfo - Affiche les informations du serveur
+!userinfo [@utilisateur] - Affiche les informations d'un utilisateur
+!avatar [@utilisateur] - Affiche l'avatar d'un utilisateur
+!ping - Vérifie la latence du bot
+
+Configuration du Serveur
+-----------------------
+!checksetup - Vérifie si le serveur est correctement configuré
+!setjoinleavechannel [#canal] - Configure le canal pour les logs d'arrivées et départs
+!setlogchannel [#canal] - Configure le canal pour les logs généraux
+
+Système de Tickets
+-----------------
+!setupticketsfr - Configure le système de tickets avec les catégories en français
+!checksetupfr - Vérifie si les catégories en français sont correctement configurées
+!ticket - Crée un message avec les boutons de création de ticket
+!resetticket - Recréer le message de ticket dans le canal ticket-support
+!renameticket <nouveau_nom> - Renomme un ticket
+!addmember @utilisateur - Ajoute un membre au ticket
+!removemember @utilisateur - Retire un membre du ticket
+!listtickets - Affiche la liste des tickets actifs
+
+Système de Modération
+--------------------
+!ban @utilisateur [raison] - Bannit un utilisateur
+!unban ID_utilisateur - Débannit un utilisateur
+!kick @utilisateur [raison] - Expulse un utilisateur
+!mute @utilisateur [durée] [raison] - Rend muet un utilisateur
+!unmute @utilisateur - Rend la parole à un utilisateur
+!clear [nombre] - Supprime un nombre spécifié de messages
+!warn @utilisateur [raison] - Avertit un utilisateur
+!warnings @utilisateur - Affiche les avertissements d'un utilisateur
+!clearwarns @utilisateur - Efface les avertissements d'un utilisateur
+
+Filtrage des Mots
+----------------
+!addword <mot> - Ajoute un mot à la liste des mots interdits
+!removeword <mot> - Retire un mot de la liste des mots interdits
+!listwords - Affiche la liste des mots interdits
+
+Annonces et Messages
+-------------------
+!annonce <message> - Envoie une annonce formatée
+!say <message> - Fait envoyer un message par le bot
+!saytitle <titre> <message> - Fait envoyer un message par le bot avec un titre
+
+Système de Règlement
+-------------------
+!setupreglement [#canal] - Configure le canal de règlement
+!addrule <texte> - Ajoute une règle au règlement
+!removerule <numéro> - Supprime une règle du règlement
+!editrule <numéro> <texte> - Modifie une règle existante
+!showrules - Affiche la liste des règles avec un bouton d'acceptation
+!setbanner [URL] - Change la bannière du règlement
+!resetrules - Supprime toutes les règles (avec confirmation)
+
+Gestion des Rôles de Staff
+-------------------------
+!setownerrole @role - Définit le rôle propriétaire du serveur
+!setadminrole @role - Définit le rôle administrateur
+!setmodrole @role - Définit le rôle modérateur
+!sethelperrole @role - Définit le rôle helper
+!staffperms [owner/admin/mod/helper] - Affiche les permissions détaillées du staff
+
+Gestion des Rôles
+----------------
+!createrole <nom> <couleur> [commandes...] - Crée un nouveau rôle Discord
+!setrole <nom> <@role ou nom> [commandes...] - Configure un rôle existant
+!listroles - Affiche tous les rôles configurés
+!delrole <nom ou @mention> - Supprime un rôle Discord du serveur
+
+Gestion des Permissions
+---------------------
+!addrolecommand <nom ou @mention> [commandes...] - Ajoute des commandes à un rôle
+!removerolecommand <nom ou @mention> [commandes...] - Retire des commandes d'un rôle
+!permissions [nom ou @mention] - Affiche les permissions d'un rôle
+!perms [nom ou @mention] - Alias de permissions
+!addperm <nom ou @mention> <commande> - Ajoute une permission à un rôle
+!removeperm <nom ou @mention> <commande> - Retire une permission d'un rôle
+!resetperms [mod/helper/all] - Réinitialise les permissions
+
+Attribution des Rôles
+-------------------
+!addrole @utilisateur @rôle - Ajoute un rôle à un utilisateur
+!removerole @utilisateur @rôle - Retire un rôle à un utilisateur
+
+Système de Giveaway
+------------------
+!giveaway <durée_en_secondes> <prix> - Crée un giveaway basé sur le temps
+!giveaway m:<nombre_membres> <prix> - Crée un giveaway basé sur le nombre de membres
+!endgiveaway - Termine immédiatement le giveaway en cours et choisit un gagnant
+!stopgiveaway - Arrête le giveaway en cours sans choisir de gagnant
+
+Commandes d'Aide
+---------------
+!help - Affiche l'aide générale du bot
+!help <commande> - Affiche l'aide pour une commande spécifique
+
+---
+
+Notes importantes :
+1. Les paramètres entre < > sont obligatoires
+2. Les paramètres entre [ ] sont optionnels
+3. Les mentions d'utilisateurs doivent être au format @utilisateur
+4. Les mentions de canaux doivent être au format #canal
+5. Certaines commandes nécessitent des permissions spécifiques
+
+Ce guide est susceptible d'être mis à jour. Dernière mise à jour : 10/04/2025
