@@ -1,0 +1,87 @@
+Guide de Démarrage Rapide de SCP-Reloaded
+=========================================
+
+Ce guide vous expliquera comment configurer et utiliser le bot SCP-Reloaded sur votre serveur Discord.
+
+Prérequis
+---------
+
+Avant de commencer, assurez-vous d'avoir :
+- Un serveur Discord
+- Les permissions d'administrateur sur ce serveur
+- Le bot SCP-Reloaded déjà ajouté à votre serveur par votre fournisseur
+
+Étape 1 : Vérifier que le bot est en ligne
+------------------------------------------
+
+1. Vérifiez que le bot apparaît dans la liste des membres de votre serveur
+2. Vérifiez que son statut est "En ligne" (point vert)
+3. Si le bot n'est pas en ligne, contactez votre fournisseur
+
+Étape 2 : Configuration initiale du serveur
+-------------------------------------------
+
+Une fois le bot en ligne sur votre serveur, suivez ces étapes pour le configurer :
+
+1. Utilisez la commande !checksetup pour vérifier l'état de la configuration
+2. Configurez les rôles de staff :
+   !setownerrole @RôlePropriétaire
+   !setadminrole @RôleAdmin
+   !setmodrole @RôleModérateur
+   !sethelperrole @RôleHelper
+   
+   Note : Vous devez d'abord créer ces rôles dans les paramètres de votre serveur Discord si vous ne les avez pas déjà.
+
+3. Configurez le système de tickets :
+   !setupticketsfr
+   Cette commande va créer toutes les catégories nécessaires et un canal ticket-support.
+
+4. Configurez le canal de règlement :
+   !setupreglement #canal-règlement
+   Remplacez #canal-règlement par le canal où vous souhaitez afficher votre règlement.
+
+5. Ajoutez des règles au règlement :
+   !addrule Règle 1 : Respectez tous les membres du serveur.
+   !addrule Règle 2 : Pas de spam ni de publicité.
+   Ajoutez autant de règles que nécessaire.
+
+Étape 3 : Vérifier la configuration
+-----------------------------------
+
+Pour vous assurer que tout est correctement configuré :
+
+1. Utilisez !checksetup pour vérifier la configuration générale
+2. Utilisez !checksetupfr pour vérifier la configuration du système de tickets
+3. Utilisez !showrules pour vérifier que votre règlement s'affiche correctement
+
+Étape 4 : Personnaliser votre serveur
+-------------------------------------
+
+Maintenant que la configuration de base est terminée, vous pouvez personnaliser davantage :
+
+1. Système de tickets : Utilisez !ticket pour créer un message avec les boutons de création de ticket dans n'importe quel canal
+2. Règlement : Utilisez !setbanner [URL] pour ajouter une bannière à votre règlement
+3. Rôles : Utilisez !createrole pour créer des rôles personnalisés avec des permissions spécifiques
+
+Dépannage
+---------
+
+Le bot ne répond pas aux commandes:
+- Vérifiez que le bot est bien en ligne
+- Vérifiez que vous avez les permissions nécessaires pour utiliser la commande
+- Vérifiez que vous écrivez correctement la commande (avec le préfixe !)
+
+Les tickets ne fonctionnent pas correctement:
+- Utilisez !checksetupfr pour vérifier la configuration
+- Utilisez !setupticketsfr pour reconfigurer le système de tickets
+- Vérifiez que le bot a les permissions nécessaires dans les catégories de tickets
+
+Les rôles ne sont pas attribués correctement:
+- Vérifiez que le bot a la permission de gérer les rôles
+- Vérifiez que le rôle du bot est placé au-dessus des rôles qu'il doit attribuer dans la hiérarchie des rôles
+
+---
+
+Si vous rencontrez des problèmes qui ne sont pas couverts dans ce guide, n'hésitez pas à contacter votre fournisseur.
+
+Ce guide est susceptible d'être mis à jour. Dernière mise à jour : 10/04/2025

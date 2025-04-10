@@ -1,0 +1,200 @@
+Guide de Gestion des Rôles
+========================
+
+Ce guide explique comment utiliser le système de gestion des rôles du bot SCP-Reloaded sur votre serveur Discord.
+
+Table des matières
+-----------------
+1. Introduction
+2. Configuration des rôles de staff
+3. Création et gestion des rôles
+4. Gestion des permissions
+5. Attribution des rôles
+6. Commandes disponibles
+7. Dépannage
+
+Introduction
+-----------
+
+Le système de gestion des rôles permet de créer, configurer et attribuer des rôles aux membres de votre serveur. Il offre également un système avancé de gestion des permissions pour contrôler qui peut utiliser quelles commandes.
+
+Configuration des rôles de staff
+-------------------------------
+
+Rôles de staff:
+
+Le bot reconnaît quatre niveaux de staff, chacun avec ses propres permissions :
+
+1. Propriétaire - Niveau le plus élevé, accès complet à toutes les commandes
+2. Administrateur - Accès à la plupart des commandes, peut gérer les modérateurs et helpers
+3. Modérateur - Peut utiliser les commandes de modération et gérer les membres
+4. Helper - Peut aider les membres et utiliser des commandes de base
+
+Configuration des rôles de staff:
+
+Pour configurer les rôles de staff, utilisez les commandes suivantes :
+
+!setownerrole @role
+!setadminrole @role
+!setmodrole @role
+!sethelperrole @role
+
+Remplacez @role par la mention du rôle correspondant.
+
+Vérification des permissions de staff:
+
+Pour voir les permissions détaillées de chaque niveau de staff, utilisez :
+
+!staffperms [owner/admin/mod/helper]
+
+Création et gestion des rôles
+----------------------------
+
+Créer un nouveau rôle:
+
+Pour créer un nouveau rôle Discord, utilisez :
+
+!createrole <nom> <couleur> [commandes...]
+
+- <nom> est le nom du rôle
+- <couleur> est la couleur du rôle (en hexadécimal ou nom de couleur)
+- [commandes...] sont les commandes que ce rôle pourra utiliser (optionnel)
+
+Exemple :
+!createrole Support #00ff00 help ticket
+
+Configurer un rôle existant:
+
+Pour configurer un rôle existant, utilisez :
+
+!setrole <nom> <@role ou nom> [commandes...]
+
+Supprimer un rôle:
+
+Pour supprimer un rôle Discord, utilisez :
+
+!delrole <nom ou @mention>
+
+Afficher tous les rôles:
+
+Pour voir la liste de tous les rôles configurés, utilisez :
+
+!listroles
+
+Gestion des permissions
+---------------------
+
+Ajouter des commandes à un rôle:
+
+Pour ajouter des commandes à un rôle, utilisez :
+
+!addrolecommand <nom ou @mention> [commandes...]
+
+Retirer des commandes d'un rôle:
+
+Pour retirer des commandes d'un rôle, utilisez :
+
+!removerolecommand <nom ou @mention> [commandes...]
+
+Voir les permissions d'un rôle:
+
+Pour voir les permissions d'un rôle, utilisez :
+
+!permissions [nom ou @mention]
+
+ou son alias :
+
+!perms [nom ou @mention]
+
+Ajouter une permission spécifique:
+
+Pour ajouter une permission spécifique à un rôle, utilisez :
+
+!addperm <nom ou @mention> <commande>
+
+Retirer une permission spécifique:
+
+Pour retirer une permission spécifique d'un rôle, utilisez :
+
+!removeperm <nom ou @mention> <commande>
+
+Réinitialiser les permissions:
+
+Pour réinitialiser les permissions, utilisez :
+
+!resetperms [mod/helper/all]
+
+Attribution des rôles
+-------------------
+
+Ajouter un rôle à un utilisateur:
+
+Pour ajouter un rôle à un utilisateur, utilisez :
+
+!addrole @utilisateur @rôle
+
+Retirer un rôle à un utilisateur:
+
+Pour retirer un rôle à un utilisateur, utilisez :
+
+!removerole @utilisateur @rôle
+
+Commandes disponibles
+--------------------
+
+Configuration des rôles de staff:
+- !setownerrole @role - Définit le rôle propriétaire du serveur
+- !setadminrole @role - Définit le rôle administrateur
+- !setmodrole @role - Définit le rôle modérateur
+- !sethelperrole @role - Définit le rôle helper
+- !staffperms [owner/admin/mod/helper] - Affiche les permissions détaillées du staff
+
+Gestion des rôles:
+- !createrole <nom> <couleur> [commandes...] - Crée un nouveau rôle Discord
+- !setrole <nom> <@role ou nom> [commandes...] - Configure un rôle existant
+- !listroles - Affiche tous les rôles configurés
+- !delrole <nom ou @mention> - Supprime un rôle Discord du serveur
+
+Gestion des permissions:
+- !addrolecommand <nom ou @mention> [commandes...] - Ajoute des commandes à un rôle
+- !removerolecommand <nom ou @mention> [commandes...] - Retire des commandes d'un rôle
+- !permissions [nom ou @mention] - Affiche les permissions d'un rôle
+- !perms [nom ou @mention] - Alias de permissions
+- !addperm <nom ou @mention> <commande> - Ajoute une permission à un rôle
+- !removeperm <nom ou @mention> <commande> - Retire une permission d'un rôle
+- !resetperms [mod/helper/all] - Réinitialise les permissions
+
+Attribution des rôles:
+- !addrole @utilisateur @rôle - Ajoute un rôle à un utilisateur
+- !removerole @utilisateur @rôle - Retire un rôle à un utilisateur
+
+Dépannage
+---------
+
+Les rôles ne sont pas créés correctement:
+- Vérifiez que le bot a la permission de gérer les rôles
+- Vérifiez que vous utilisez correctement la syntaxe de la commande
+- Vérifiez que le nom du rôle n'existe pas déjà
+
+Les permissions ne fonctionnent pas:
+- Vérifiez que les rôles de staff sont correctement configurés
+- Vérifiez que les commandes sont correctement attribuées aux rôles
+- Utilisez !permissions pour vérifier les permissions d'un rôle
+
+Les rôles ne sont pas attribués correctement:
+- Vérifiez que le bot a la permission de gérer les rôles
+- Vérifiez que le rôle du bot est placé au-dessus des rôles qu'il doit attribuer dans la hiérarchie des rôles
+- Vérifiez que vous mentionnez correctement l'utilisateur et le rôle
+
+Solutions:
+Si vous rencontrez des problèmes persistants :
+1. Vérifiez les permissions du bot dans les paramètres du serveur
+2. Vérifiez la position du rôle du bot dans la hiérarchie des rôles
+3. Utilisez !checksetup pour vérifier la configuration générale
+4. Si les problèmes persistent, contactez votre fournisseur
+
+---
+
+Si vous avez des questions ou des suggestions concernant le système de gestion des rôles, n'hésitez pas à contacter votre fournisseur.
+
+Ce guide est susceptible d'être mis à jour. Dernière mise à jour : 10/04/2025

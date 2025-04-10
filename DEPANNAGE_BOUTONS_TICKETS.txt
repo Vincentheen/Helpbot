@@ -1,0 +1,104 @@
+Guide de Dépannage : Boutons des Tickets
+======================================
+
+Ce guide vous aidera à résoudre les problèmes liés aux boutons du système de tickets qui ne fonctionnent pas correctement.
+
+Problème : Les boutons de tickets ne répondent pas
+-------------------------------------------------
+
+Si les utilisateurs ne peuvent pas interagir avec les boutons de création ou de gestion des tickets, voici les étapes à suivre pour résoudre ce problème :
+
+1. Vérifications de base
+-----------------------
+
+a) Vérifiez que le bot est en ligne
+   - Assurez-vous que le statut du bot est "En ligne" (point vert)
+   - Si le bot est hors ligne, contactez votre fournisseur
+
+b) Vérifiez les permissions du bot
+   - Le bot doit avoir les permissions suivantes :
+     * Gérer les canaux
+     * Gérer les rôles
+     * Envoyer des messages
+     * Intégrer des liens
+     * Utiliser des emojis externes
+     * Ajouter des réactions
+   - Pour vérifier : Paramètres du serveur > Rôles > [Rôle du bot] > Permissions
+
+c) Vérifiez les permissions dans les catégories de tickets
+   - Le bot doit avoir toutes les permissions nécessaires dans chaque catégorie de tickets
+   - Pour vérifier : Clic droit sur la catégorie > Modifier la catégorie > Permissions > Vérifiez que le bot a toutes les permissions
+
+2. Recréer le message des tickets
+-------------------------------
+
+a) Utilisez la commande suivante pour recréer le message avec les boutons dans le canal ticket-support :
+   !resetticket
+
+b) Si cela ne fonctionne pas, essayez de créer un nouveau message avec les boutons dans n'importe quel canal :
+   !ticket
+
+3. Redémarrer le système de tickets
+---------------------------------
+
+Si le problème persiste, essayez de réinitialiser complètement le système :
+
+a) Vérifiez la configuration actuelle :
+   !checksetupfr
+
+b) Reconfigurez entièrement le système de tickets :
+   !setupticketsfr
+
+4. Problèmes spécifiques aux boutons
+----------------------------------
+
+a) Boutons de création de ticket ne fonctionnent pas
+   - Vérifiez que les catégories de tickets existent avec les noms exacts
+   - Vérifiez que le bot a la permission de créer des canaux dans ces catégories
+   - Essayez de recréer le message avec !ticket
+
+b) Bouton "Fermer le ticket" ne fonctionne pas
+   - Vérifiez que le bot a la permission de gérer les permissions du canal
+   - Vérifiez que l'utilisateur qui essaie de fermer le ticket est soit le créateur, soit un membre du staff
+
+c) Bouton "Supprimer le ticket" ne fonctionne pas
+   - Vérifiez que le bot a la permission de supprimer des canaux
+   - Vérifiez que seuls les membres du staff essaient d'utiliser ce bouton
+
+d) Bouton "Rouvrir le ticket" ne fonctionne pas
+   - Vérifiez que le bot a la permission de gérer les permissions du canal
+   - Vérifiez que seuls les membres du staff essaient d'utiliser ce bouton
+
+5. Solutions avancées
+-------------------
+
+Si aucune des solutions ci-dessus ne fonctionne :
+
+a) Vérifiez les logs du bot (si vous y avez accès)
+   - Recherchez des erreurs liées au système de tickets ou aux boutons
+
+b) Essayez de créer un nouveau ticket manuellement
+   - Créez un nouveau canal dans la catégorie appropriée
+   - Nommez-le selon le format : ticket-username-1
+   - Ajoutez l'utilisateur et le staff au canal
+
+c) Gestion manuelle des tickets
+   - En dernier recours, vous pouvez gérer manuellement les permissions des canaux de tickets
+   - Pour fermer : Retirez la permission d'écriture à l'utilisateur
+   - Pour supprimer : Supprimez manuellement le canal
+   - Pour rouvrir : Ajoutez la permission d'écriture à l'utilisateur
+
+6. Contacter le support
+---------------------
+
+Si vous avez essayé toutes les solutions ci-dessus et que le problème persiste, contactez votre fournisseur avec les informations suivantes :
+
+- Description détaillée du problème
+- Captures d'écran des messages d'erreur (si disponibles)
+- Liste des étapes que vous avez déjà essayées
+- Permissions actuelles du bot
+- Configuration actuelle des catégories de tickets
+
+---
+
+Ce guide est susceptible d'être mis à jour. Dernière mise à jour : 10/04/2025

@@ -1,0 +1,159 @@
+Guide Utilisateur du Système de Tickets
+====================================
+
+Ce guide explique comment utiliser le système de tickets de SCP-Reloaded sur votre serveur Discord.
+
+Table des matières
+-----------------
+1. Introduction
+2. Configuration du système
+3. Catégories de tickets
+4. Création d'un ticket
+5. Gestion des tickets
+6. Commandes disponibles
+7. Dépannage
+
+Introduction
+-----------
+
+Le système de tickets permet aux utilisateurs de créer des canaux privés pour communiquer avec le staff du serveur. Chaque ticket est classé dans une catégorie spécifique, ce qui facilite l'organisation et la gestion des demandes.
+
+Fonctionnalités principales:
+- Création de tickets par catégorie
+- Noms de tickets personnalisés incluant le nom de l'utilisateur
+- Boutons interactifs pour fermer, supprimer et rouvrir les tickets
+- Logs automatiques des actions sur les tickets
+- Permissions automatiquement configurées
+
+Configuration du système
+-----------------------
+
+Configuration initiale:
+
+Pour configurer le système de tickets, utilisez la commande :
+!setupticketsfr
+
+Cette commande effectue les actions suivantes :
+1. Crée les catégories en français
+2. Crée ou vérifie le canal ticket-support
+3. Crée ou vérifie le canal de logs des tickets
+4. Crée un message avec les boutons de création de ticket dans le canal ticket-support
+
+Vérification de la configuration:
+
+Pour vérifier si le système est correctement configuré, utilisez :
+!checksetupfr
+
+Cette commande vérifie que tous les éléments nécessaires sont en place.
+
+Catégories de tickets
+--------------------
+
+Le système utilise 5 catégories de tickets en français :
+
+1. 📋 Recrutement Staff - Pour les candidatures au staff du serveur
+2. 💼 Recrutement Entreprise - Pour les demandes de recrutement d'entreprise
+3. 🎮 Support Jeu - Pour l'aide concernant le jeu
+4. 🔨 Contestation Sanction - Pour contester une sanction reçue
+5. 📢 Signalement - Pour signaler un problème ou un utilisateur
+
+Chaque catégorie a son propre bouton avec une couleur distinctive :
+- Recrutement Staff : Bleu
+- Recrutement Entreprise : Bleu
+- Support Jeu : Vert
+- Contestation Sanction : Rouge
+- Signalement : Rouge
+
+Création d'un ticket
+-------------------
+
+Pour les utilisateurs:
+
+1. Rendez-vous dans le canal ticket-support (ou tout autre canal où un message de ticket a été créé)
+2. Cliquez sur le bouton correspondant à votre besoin
+3. Un nouveau canal sera créé avec votre nom (ex: ticket-username-1)
+4. Vous pourrez y discuter avec le staff du serveur
+
+Pour les administrateurs:
+
+Pour créer un message de ticket dans n'importe quel canal, utilisez :
+!ticket
+
+Cette commande crée un message avec les boutons de création de ticket dans le canal où elle est utilisée.
+
+Gestion des tickets
+------------------
+
+Cycle de vie d'un ticket:
+
+1. Création - Un utilisateur clique sur un bouton de catégorie
+2. Discussion - L'utilisateur et le staff discutent dans le canal
+3. Fermeture - Le ticket est fermé quand le problème est résolu
+4. Suppression ou réouverture - Le ticket peut être supprimé ou rouvert selon les besoins
+
+Boutons de gestion:
+
+- 🔒 Fermer le ticket - Ferme le ticket (personne ne peut plus y écrire)
+  - Peut être utilisé par le créateur du ticket ou un membre du staff
+  - Affiche deux nouveaux boutons après la fermeture
+
+- 🗑️ Supprimer le ticket - Supprime définitivement le canal du ticket
+  - Ne peut être utilisé que par un membre du staff
+  - Envoie un message dans le canal de logs
+
+- 🔓 Rouvrir le ticket - Rouvre un ticket fermé
+  - Ne peut être utilisé que par un membre du staff
+  - Restaure les permissions d'écriture pour le créateur et le staff
+
+Logs des tickets:
+
+Toutes les actions sur les tickets sont enregistrées dans le canal de logs des tickets :
+- Création d'un ticket
+- Fermeture d'un ticket
+- Suppression d'un ticket
+- Réouverture d'un ticket
+
+Commandes disponibles
+--------------------
+
+Configuration:
+- !setupticketsfr - Configure le système de tickets avec les catégories en français
+- !checksetupfr - Vérifie si les catégories en français sont correctement configurées
+
+Gestion des tickets:
+- !ticket - Crée un message avec les boutons de création de ticket
+- !resetticket - Recréer le message de ticket dans le canal ticket-support
+- !renameticket <nouveau_nom> - Renomme un ticket
+- !addmember @utilisateur - Ajoute un membre au ticket
+- !removemember @utilisateur - Retire un membre du ticket
+- !listtickets - Affiche la liste des tickets actifs
+
+Dépannage
+---------
+
+Problèmes courants:
+
+Les boutons ne fonctionnent pas:
+- Vérifiez que le bot est en ligne
+- Utilisez !ticket pour créer un nouveau message avec des boutons
+
+Les tickets sont créés dans la mauvaise catégorie:
+- Vérifiez que les catégories existent avec les noms exacts
+- Utilisez !setupticketsfr pour reconfigurer les catégories
+
+Les permissions ne fonctionnent pas correctement:
+- Vérifiez que le bot a les permissions nécessaires
+- Vérifiez que le rôle du bot est placé au-dessus des autres rôles dans la hiérarchie
+
+Solutions:
+
+Si vous rencontrez des problèmes persistants :
+1. Utilisez !checksetupfr pour diagnostiquer les problèmes
+2. Utilisez !setupticketsfr pour reconfigurer entièrement le système
+3. Si les problèmes persistent, contactez votre fournisseur
+
+---
+
+Ce guide est susceptible d'être mis à jour. Si vous avez des questions ou des suggestions, n'hésitez pas à contacter votre fournisseur.
+
+Dernière mise à jour : 10/04/2025

@@ -1,0 +1,122 @@
+Guide du Système de Giveaway
+===========================
+
+Ce guide explique comment utiliser le système de giveaway (concours) du bot SCP-Reloaded sur votre serveur Discord.
+
+Table des matières
+-----------------
+1. Introduction
+2. Création d'un giveaway
+3. Gestion des giveaways
+4. Commandes disponibles
+5. Bonnes pratiques
+6. Dépannage
+
+Introduction
+-----------
+
+Le système de giveaway permet d'organiser facilement des concours sur votre serveur Discord. Les membres peuvent participer en cliquant sur un bouton, et le bot sélectionnera automatiquement un gagnant à la fin du concours.
+
+Création d'un giveaway
+---------------------
+
+Giveaway basé sur le temps:
+
+Pour créer un giveaway qui se termine après une durée spécifique, utilisez :
+
+!giveaway <durée_en_secondes> <prix>
+
+Exemples :
+!giveaway 3600 Nitro Classic
+Crée un giveaway pour un "Nitro Classic" qui durera 1 heure (3600 secondes).
+
+!giveaway 86400 Carte Steam 20€
+Crée un giveaway pour une "Carte Steam 20€" qui durera 24 heures (86400 secondes).
+
+Giveaway basé sur le nombre de membres:
+
+Pour créer un giveaway qui se termine lorsque le serveur atteint un certain nombre de membres, utilisez :
+
+!giveaway m:<nombre_membres> <prix>
+
+Exemple :
+!giveaway m:500 Nitro Premium
+Crée un giveaway pour un "Nitro Premium" qui se terminera lorsque le serveur atteindra 500 membres.
+
+Fonctionnement:
+
+Lorsque vous créez un giveaway :
+1. Le bot envoie un message avec les détails du concours
+2. Les membres peuvent participer en cliquant sur le bouton 🎉
+3. À la fin du concours, le bot sélectionne aléatoirement un gagnant parmi les participants
+4. Le gagnant est annoncé dans le même canal
+
+Gestion des giveaways
+--------------------
+
+Terminer un giveaway immédiatement:
+
+Pour terminer immédiatement un giveaway en cours et choisir un gagnant, utilisez :
+
+!endgiveaway
+
+Cette commande termine le giveaway actif, sélectionne un gagnant et l'annonce.
+
+Arrêter un giveaway sans choisir de gagnant:
+
+Pour arrêter un giveaway en cours sans choisir de gagnant, utilisez :
+
+!stopgiveaway
+
+Cette commande annule le giveaway actif sans sélectionner de gagnant.
+
+Commandes disponibles
+--------------------
+
+- !giveaway <durée_en_secondes> <prix> - Crée un giveaway basé sur le temps
+- !giveaway m:<nombre_membres> <prix> - Crée un giveaway qui se termine quand le serveur atteint un certain nombre de membres
+- !endgiveaway - Termine immédiatement le giveaway en cours et choisit un gagnant
+- !stopgiveaway - Arrête le giveaway en cours sans choisir de gagnant
+
+Bonnes pratiques
+---------------
+
+Pour des giveaways réussis, suivez ces bonnes pratiques :
+
+1. Choisissez une durée appropriée - Une durée trop courte ne permettra pas à suffisamment de membres de participer, tandis qu'une durée trop longue peut faire perdre l'intérêt.
+
+2. Décrivez clairement le prix - Assurez-vous que les membres comprennent exactement ce qu'ils peuvent gagner.
+
+3. Annoncez le giveaway - Utilisez !annonce pour informer les membres du serveur qu'un giveaway est en cours.
+
+4. Vérifiez que vous pouvez fournir le prix - Ne créez pas de giveaway pour des prix que vous ne pouvez pas fournir.
+
+5. Limitez le nombre de giveaways simultanés - Trop de giveaways en même temps peuvent diluer l'intérêt.
+
+Dépannage
+---------
+
+Le giveaway ne se crée pas:
+- Vérifiez que vous utilisez correctement la syntaxe de la commande
+- Vérifiez que le bot a la permission d'envoyer des messages dans le canal
+- Vérifiez que vous avez les permissions nécessaires pour utiliser la commande
+
+Le giveaway ne se termine pas automatiquement:
+- Pour les giveaways basés sur le temps, vérifiez que le bot est resté en ligne pendant toute la durée
+- Pour les giveaways basés sur le nombre de membres, vérifiez que le serveur n'a pas perdu de membres
+
+Aucun gagnant n'est sélectionné:
+- Vérifiez qu'au moins une personne a participé au giveaway
+- Si personne n'a participé, le bot ne peut pas sélectionner de gagnant
+
+Solutions:
+Si vous rencontrez des problèmes persistants :
+1. Utilisez !stopgiveaway pour arrêter le giveaway problématique
+2. Créez un nouveau giveaway
+3. Si les problèmes persistent, contactez votre fournisseur
+
+---
+
+Si vous avez des questions ou des suggestions concernant le système de giveaway, n'hésitez pas à contacter votre fournisseur.
+
+Ce guide est susceptible d'être mis à jour. Dernière mise à jour : 10/04/2025

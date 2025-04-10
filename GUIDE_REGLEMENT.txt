@@ -1,0 +1,143 @@
+Guide du Système de Règlement
+============================
+
+Ce guide explique comment configurer et utiliser le système de règlement du bot SCP-Reloaded sur votre serveur Discord.
+
+Table des matières
+-----------------
+1. Introduction
+2. Configuration du règlement
+3. Gestion des règles
+4. Système de vérification
+5. Personnalisation
+6. Commandes disponibles
+7. Dépannage
+
+Introduction
+-----------
+
+Le système de règlement permet de créer et gérer facilement un ensemble de règles pour votre serveur. Il inclut également un système de vérification qui permet aux nouveaux membres d'accepter le règlement pour obtenir un rôle spécifique.
+
+Configuration du règlement
+-------------------------
+
+Configuration initiale:
+
+Pour configurer le canal où sera affiché le règlement, utilisez la commande :
+!setupreglement [#canal]
+
+Si vous ne spécifiez pas de canal, le canal actuel sera utilisé.
+
+Affichage du règlement:
+
+Pour afficher le règlement avec un bouton d'acceptation, utilisez :
+!showrules
+
+Cette commande affiche toutes les règles que vous avez ajoutées, ainsi qu'un bouton permettant aux utilisateurs d'accepter le règlement.
+
+Gestion des règles
+-----------------
+
+Ajouter une règle:
+
+Pour ajouter une règle au règlement, utilisez :
+!addrule <texte>
+
+Exemple :
+!addrule Respectez tous les membres du serveur.
+
+Supprimer une règle:
+
+Pour supprimer une règle, utilisez :
+!removerule <numéro>
+
+Le numéro correspond à la position de la règle dans la liste.
+
+Modifier une règle:
+
+Pour modifier une règle existante, utilisez :
+!editrule <numéro> <nouveau texte>
+
+Voir toutes les règles:
+
+Pour voir la liste de toutes les règles avec leurs numéros, utilisez :
+!showrules
+
+Supprimer toutes les règles:
+
+Pour supprimer toutes les règles (avec confirmation), utilisez :
+!resetrules
+
+Système de vérification
+----------------------
+
+Le système de vérification permet aux nouveaux membres d'accepter le règlement pour obtenir un rôle spécifique.
+
+Fonctionnement:
+
+1. Un utilisateur lit le règlement affiché avec !showrules
+2. L'utilisateur clique sur le bouton "J'accepte le règlement"
+3. Le bot attribue automatiquement le rôle "Membre" à l'utilisateur
+4. Un message de confirmation est envoyé à l'utilisateur
+5. L'action est enregistrée dans le canal de logs (si configuré)
+
+Configuration du rôle:
+
+Par défaut, le système attribue le rôle nommé "Membre". Assurez-vous que :
+1. Ce rôle existe sur votre serveur
+2. Le bot a la permission de gérer les rôles
+3. Le rôle du bot est placé au-dessus du rôle "Membre" dans la hiérarchie des rôles
+
+Personnalisation
+---------------
+
+Ajouter une bannière:
+
+Pour ajouter une bannière (image) au règlement, utilisez :
+!setbanner [URL]
+
+L'URL doit pointer vers une image (jpg, png, gif, etc.).
+
+Commandes disponibles
+--------------------
+
+Configuration:
+- !setupreglement [#canal] - Configure le canal de règlement
+- !setbanner [URL] - Change la bannière du règlement
+
+Gestion des règles:
+- !addrule <texte> - Ajoute une règle au règlement
+- !removerule <numéro> - Supprime une règle du règlement
+- !editrule <numéro> <texte> - Modifie une règle existante
+- !showrules - Affiche la liste des règles avec un bouton d'acceptation
+- !resetrules - Supprime toutes les règles (avec confirmation)
+
+Dépannage
+---------
+
+Le règlement ne s'affiche pas correctement:
+- Vérifiez que le bot a la permission d'envoyer des messages dans le canal configuré
+- Vérifiez que vous avez bien ajouté des règles avec !addrule
+
+Le bouton d'acceptation ne fonctionne pas:
+- Vérifiez que le bot est en ligne
+- Vérifiez que le bot a la permission de gérer les rôles
+- Vérifiez que le rôle du bot est placé au-dessus du rôle "Membre" dans la hiérarchie
+
+Le rôle n'est pas attribué:
+- Vérifiez que le rôle "Membre" existe sur votre serveur
+- Vérifiez que le bot a la permission de gérer les rôles
+- Vérifiez que le rôle du bot est placé au-dessus du rôle "Membre" dans la hiérarchie
+
+Solutions:
+Si vous rencontrez des problèmes persistants :
+1. Utilisez !setupreglement pour reconfigurer le canal de règlement
+2. Ajoutez à nouveau vos règles
+3. Utilisez !showrules pour afficher le règlement avec le bouton d'acceptation
+4. Si les problèmes persistent, contactez votre fournisseur
+
+---
+
+Si vous avez des questions ou des suggestions concernant le système de règlement, n'hésitez pas à contacter votre fournisseur.
+
+Ce guide est susceptible d'être mis à jour. Dernière mise à jour : 10/04/2025

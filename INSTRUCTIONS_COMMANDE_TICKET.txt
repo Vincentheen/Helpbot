@@ -1,0 +1,44 @@
+Instructions pour la commande !ticket
+===================================
+
+J'ai mis à jour le fichier tickets_fr.py pour ajouter une commande !ticket simplifiée qui envoie uniquement le message avec les boutons de création de ticket.
+
+Nouvelle fonctionnalité
+----------------------
+
+La commande !ticket a été modifiée pour :
+1. Envoyer uniquement le message avec les boutons de création de ticket
+2. Ajouter une réaction ✅ au message de commande pour confirmer son exécution
+3. Vérifier que l'utilisateur a les permissions nécessaires (gérer les canaux)
+
+Comment utiliser la commande
+---------------------------
+
+1. Tapez !ticket dans n'importe quel canal où vous souhaitez afficher les boutons de création de ticket.
+2. Le bot enverra un message avec les boutons de création de ticket dans ce même canal.
+3. Les utilisateurs pourront cliquer sur ces boutons pour créer des tickets.
+
+Avantages
+--------
+
+1. Simplicité - La commande est simple et fait exactement ce qu'elle est censée faire.
+2. Flexibilité - Vous pouvez créer des messages de ticket dans n'importe quel canal, pas seulement dans le canal ticket-support.
+3. Contrôle - Seuls les membres du staff peuvent utiliser cette commande.
+
+Comment mettre à jour
+--------------------
+
+1. Téléchargez le nouveau fichier tickets_fr.py que je vous ai fourni.
+2. Remplacez l'ancien fichier tickets_fr.py sur votre Replit par cette nouvelle version.
+3. Redémarrez complètement votre bot sur Replit.
+
+Remarques importantes
+--------------------
+
+- Cette commande est différente de !setupticketsfr qui configure l'ensemble du système de tickets.
+- Si vous souhaitez configurer le système complet (catégories, canal de support, etc.), utilisez !setupticketsfr.
+- Si vous voulez simplement créer un message avec les boutons, utilisez !ticket.
+
+---
+
+Ce guide est susceptible d'être mis à jour. Dernière mise à jour : 10/04/2025

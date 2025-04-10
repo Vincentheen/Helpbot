@@ -1,0 +1,53 @@
+Instructions pour les Boutons de Ticket
+==================================
+
+Fonctionnalités des boutons de ticket
+------------------------------------
+
+Les boutons de ticket permettent aux utilisateurs et au staff de gérer facilement les tickets sans avoir à utiliser de commandes. Voici les fonctionnalités disponibles :
+
+1. Boutons de création de ticket
+   - Chaque bouton correspond à une catégorie différente
+   - Cliquer sur un bouton crée un nouveau ticket dans la catégorie correspondante
+
+2. Boutons de gestion de ticket
+   - Fermer le ticket : Rend le ticket en lecture seule pour l'utilisateur
+   - Supprimer le ticket : Supprime définitivement le canal du ticket
+   - Rouvrir le ticket : Restaure les permissions d'écriture pour l'utilisateur
+
+Comment utiliser les boutons
+--------------------------
+
+Pour les utilisateurs :
+1. Allez dans le canal #ticket-support
+2. Cliquez sur le bouton correspondant à votre besoin
+3. Un nouveau canal de ticket sera créé
+4. Pour fermer votre ticket, cliquez sur le bouton "Fermer le ticket"
+
+Pour le staff :
+1. Dans un ticket ouvert, vous pouvez cliquer sur "Fermer le ticket" pour le fermer
+2. Dans un ticket fermé, vous pouvez :
+   - Cliquer sur "Supprimer le ticket" pour le supprimer définitivement
+   - Cliquer sur "Rouvrir le ticket" pour permettre à l'utilisateur d'écrire à nouveau
+
+Avantages des boutons
+-------------------
+
+1. Facilité d'utilisation : Les utilisateurs n'ont pas besoin de connaître des commandes
+2. Interface intuitive : Les boutons sont clairement étiquetés et faciles à comprendre
+3. Réduction des erreurs : Moins de risques d'erreurs de syntaxe ou de commandes mal utilisées
+4. Expérience utilisateur améliorée : Processus plus fluide et moderne
+
+Dépannage
+--------
+
+Si les boutons ne fonctionnent pas correctement :
+
+1. Vérifiez que vous avez bien remplacé l'ancien fichier tickets_fr.py par la nouvelle version.
+2. Redémarrez complètement le bot sur Replit.
+3. Si les boutons ne fonctionnent pas dans les tickets existants, vous pouvez créer un nouveau ticket pour tester.
+4. Si les problèmes persistent, vous pouvez toujours fermer les tickets manuellement en modifiant les permissions des canaux.
+
+---
+
+Ce guide est susceptible d'être mis à jour. Dernière mise à jour : 10/04/2025

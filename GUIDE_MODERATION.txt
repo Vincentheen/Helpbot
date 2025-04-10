@@ -1,0 +1,139 @@
+Guide du Système de Modération
+============================
+
+Ce guide explique comment utiliser les fonctionnalités de modération du bot SCP-Reloaded pour gérer efficacement votre serveur Discord.
+
+Table des matières
+-----------------
+1. Introduction
+2. Commandes de modération
+3. Système d'avertissements
+4. Filtrage des mots
+5. Annonces et messages
+6. Bonnes pratiques
+7. Dépannage
+
+Introduction
+-----------
+
+Le système de modération de SCP-Reloaded offre un ensemble complet d'outils pour aider les modérateurs à maintenir l'ordre sur le serveur. Ces outils permettent de sanctionner les utilisateurs, de filtrer les messages inappropriés et de communiquer efficacement avec les membres du serveur.
+
+Commandes de modération
+----------------------
+
+Sanctions des utilisateurs:
+
+- Bannissement
+  !ban @utilisateur [raison]
+  Bannit définitivement un utilisateur du serveur. La raison est optionnelle mais recommandée.
+
+- Débannissement
+  !unban ID_utilisateur
+  Débannit un utilisateur en utilisant son ID Discord.
+
+- Expulsion
+  !kick @utilisateur [raison]
+  Expulse un utilisateur du serveur. Il pourra rejoindre à nouveau avec une invitation.
+
+- Rendre muet
+  !mute @utilisateur [durée] [raison]
+  Empêche un utilisateur d'envoyer des messages. La durée peut être spécifiée (ex: 10m, 1h, 1d).
+
+- Rendre la parole
+  !unmute @utilisateur
+  Permet à un utilisateur précédemment rendu muet d'envoyer à nouveau des messages.
+
+Gestion des messages:
+
+- Suppression de messages
+  !clear [nombre]
+  Supprime un nombre spécifié de messages récents dans le canal actuel.
+
+Système d'avertissements
+-----------------------
+
+Le système d'avertissements permet de garder une trace des infractions mineures et d'appliquer des sanctions progressives.
+
+- Avertir un utilisateur
+  !warn @utilisateur [raison]
+  Ajoute un avertissement au dossier de l'utilisateur.
+
+- Voir les avertissements
+  !warnings @utilisateur
+  Affiche tous les avertissements d'un utilisateur.
+
+- Effacer les avertissements
+  !clearwarns @utilisateur
+  Supprime tous les avertissements d'un utilisateur.
+
+Filtrage des mots
+----------------
+
+Le bot peut automatiquement détecter et supprimer les messages contenant des mots interdits.
+
+- Ajouter un mot interdit
+  !addword <mot>
+  Ajoute un mot à la liste des mots interdits.
+
+- Retirer un mot interdit
+  !removeword <mot>
+  Retire un mot de la liste des mots interdits.
+
+- Afficher la liste des mots interdits
+  !listwords
+  Affiche tous les mots actuellement interdits sur le serveur.
+
+Annonces et messages
+-------------------
+
+Ces commandes permettent de communiquer efficacement avec les membres du serveur.
+
+- Envoyer une annonce
+  !annonce <message>
+  Envoie un message formaté comme une annonce officielle.
+
+- Faire parler le bot
+  !say <message>
+  Fait envoyer un message par le bot.
+
+- Faire parler le bot avec un titre
+  !saytitle <titre> <message>
+  Fait envoyer un message par le bot avec un titre.
+
+Bonnes pratiques
+---------------
+
+Pour une modération efficace et équitable, suivez ces bonnes pratiques :
+
+1. Toujours expliquer les sanctions - Utilisez le paramètre [raison] pour expliquer pourquoi vous sanctionnez un utilisateur.
+
+2. Utiliser des sanctions progressives - Commencez par des avertissements, puis passez à des sanctions plus sévères si nécessaire.
+
+3. Documenter les incidents - Utilisez le système d'avertissements pour garder une trace des infractions.
+
+4. Être cohérent - Appliquez les mêmes règles à tous les utilisateurs.
+
+5. Communiquer clairement - Utilisez les commandes d'annonce pour informer les membres des règles et des changements.
+
+Dépannage
+---------
+
+Le bot ne peut pas sanctionner un utilisateur:
+- Vérifiez que le rôle du bot est placé au-dessus du rôle de l'utilisateur dans la hiérarchie des rôles
+- Vérifiez que le bot a les permissions nécessaires (Bannir des membres, Expulser des membres, etc.)
+- Vérifiez que vous avez vous-même les permissions nécessaires pour utiliser la commande
+
+Les messages ne sont pas filtrés:
+- Vérifiez que les mots sont correctement ajoutés à la liste des mots interdits
+- Vérifiez que le bot a la permission de lire les messages et de gérer les messages
+
+Les commandes ne fonctionnent pas:
+- Vérifiez que vous utilisez correctement la syntaxe de la commande
+- Vérifiez que vous avez les permissions nécessaires pour utiliser la commande
+- Vérifiez que le bot est en ligne
+
+---
+
+Si vous rencontrez des problèmes qui ne sont pas couverts dans ce guide, n'hésitez pas à contacter votre fournisseur.
+
+Ce guide est susceptible d'être mis à jour. Dernière mise à jour : 10/04/2025

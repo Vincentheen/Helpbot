@@ -1,0 +1,62 @@
+Instructions pour les Noms de Tickets
+=================================
+
+Format des noms de tickets
+-------------------------
+
+Les tickets créés par le bot suivent un format spécifique pour faciliter leur identification et leur gestion. Le format est le suivant :
+
+ticket-[nom_utilisateur]-[numéro]
+
+Exemples :
+- ticket-jean-1
+- ticket-marie-2
+- ticket-pierre-3
+
+Ce format permet de :
+1. Identifier rapidement à qui appartient le ticket
+2. Distinguer facilement les tickets des autres canaux
+3. Suivre le nombre de tickets créés par un utilisateur
+
+Personnalisation des noms de tickets
+----------------------------------
+
+Si vous souhaitez renommer un ticket, vous pouvez utiliser la commande :
+
+!renameticket <nouveau_nom>
+
+Exemple :
+!renameticket urgent-support-jean
+
+Note : Cette commande ne peut être utilisée que par les membres du staff.
+
+Avantages du système de nommage
+-----------------------------
+
+1. Organisation : Les tickets sont clairement identifiables dans la liste des canaux
+2. Traçabilité : Vous pouvez facilement voir qui a créé chaque ticket
+3. Historique : Le numéro à la fin permet de suivre combien de tickets un utilisateur a créés
+4. Recherche : Vous pouvez facilement rechercher tous les tickets d'un utilisateur spécifique
+
+Commandes liées aux tickets
+-------------------------
+
+- !ticket - Crée un message avec les boutons de création de ticket
+- !setupticketsfr - Configure le système complet de tickets
+- !renameticket <nouveau_nom> - Renomme un ticket
+- !addmember @utilisateur - Ajoute un membre au ticket
+- !removemember @utilisateur - Retire un membre du ticket
+- !listtickets - Affiche la liste des tickets actifs
+
+Dépannage
+--------
+
+Si vous rencontrez des problèmes :
+
+1. Vérifiez que vous avez bien remplacé l'ancien fichier tickets_fr.py par la nouvelle version.
+2. Redémarrez complètement le bot sur Replit.
+3. Si les noms des nouveaux tickets ne sont pas au format attendu, vérifiez les logs du bot pour voir s'il y a des erreurs.
+
+---
+
+Ce guide est susceptible d'être mis à jour. Dernière mise à jour : 10/04/2025

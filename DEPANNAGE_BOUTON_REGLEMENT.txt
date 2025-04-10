@@ -1,0 +1,82 @@
+Guide de Dépannage : Bouton du Règlement
+=======================================
+
+Ce guide vous aidera à résoudre les problèmes liés au bouton d'acceptation du règlement qui ne fonctionne pas correctement.
+
+Problème : Le bouton "J'accepte le règlement" ne répond pas
+----------------------------------------------------------
+
+
+1. Recréer le message du règlement
+---------------------------------
+
+a) Utilisez la commande suivante pour reconfigurer le canal de règlement :
+   !setupreglement #canal-règlement
+
+b) Ajoutez à nouveau vos règles (si elles ont été supprimées) :
+   !addrule Règle 1 : Respectez tous les membres du serveur.
+   !addrule Règle 2 : Pas de spam ni de publicité.
+   (Ajoutez toutes vos règles)
+
+c) Affichez le règlement avec un nouveau bouton :
+   !showrules
+
+2. Redémarrer le système de règlement
+-----------------------------------
+
+Si le problème persiste, essayez de réinitialiser complètement le système :
+
+a) Supprimez toutes les règles actuelles :
+   !resetrules
+   (Confirmez en tapant "yes")
+
+b) Configurez à nouveau le canal de règlement :
+   !setupreglement #canal-règlement
+
+c) Ajoutez à nouveau toutes vos règles :
+   !addrule Règle 1 : ...
+   !addrule Règle 2 : ...
+
+d) Affichez le règlement :
+   !showrules
+
+3. Vérifier le rôle "Membre"
+--------------------------
+
+a) Assurez-vous que le rôle "Membre" existe sur votre serveur
+   - Si ce rôle n'existe pas, créez-le : Paramètres du serveur > Rôles > Créer un rôle > Nommez-le exactement "Membre"
+
+b) Vérifiez que le rôle a les permissions appropriées
+   - Le rôle "Membre" devrait avoir accès aux canaux généraux du serveur
+
+4. Solutions avancées
+-------------------
+
+Si aucune des solutions ci-dessus ne fonctionne :
+
+a) Vérifiez les logs du bot (si vous y avez accès)
+   - Recherchez des erreurs liées au système de règlement ou aux boutons
+
+b) Essayez de créer un nouveau rôle pour le règlement
+   - Créez un nouveau rôle (par exemple "Vérifié")
+   - Configurez les canaux pour qu'ils soient visibles uniquement par ce rôle
+   - Contactez votre fournisseur pour modifier le code afin qu'il attribue ce nouveau rôle
+
+c) Attribution manuelle du rôle
+   - En dernier recours, vous pouvez attribuer manuellement le rôle "Membre" aux nouveaux utilisateurs
+   - Utilisez la commande : !addrole @utilisateur @Membre
+
+5. Contacter le support
+---------------------
+
+Si vous avez essayé toutes les solutions ci-dessus et que le problème persiste, contactez votre fournisseur avec les informations suivantes :
+
+- Description détaillée du problème
+- Captures d'écran des messages d'erreur (si disponibles)
+- Liste des étapes que vous avez déjà essayées
+- Permissions actuelles du bot
+- Configuration actuelle des rôles
+
+---
+
+Ce guide est susceptible d'être mis à jour. Dernière mise à jour : 10/04/2025
